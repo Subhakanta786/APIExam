@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "integer"
+    },
+    "isfair": {
+      "type": "boolean"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "local": {
+          "type": "string"
+        },
+        "remote": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "local",
+        "remote"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "isfair",
+    "address"
+  ]
+}
